@@ -32,10 +32,10 @@
 			<td><%=brd.getBrdWriter()%></td>
 		</tr>
 		<tr>
-			<td colspan="2"><textarea rows="3" cols="30"><%=brd.getBrdContent()%></textarea></td>
+			<td colspan="2"><textarea readonly rows="3" cols="30"><%=brd.getBrdContent()%></textarea></td>
 		</tr>
 		<tr>
-			<td colspan="2" align="center"><button>수 정</button>
+			<td colspan="2" align="center"><button onclick="location.href='modify.jsp?no=<%=brd.getBrdNo()%>'">수 정</button>
 				<button onclick="location.href='delete.jsp?no=<%=brd.getBrdNo()%>'">삭 제</button></td>
 		</tr>
 

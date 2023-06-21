@@ -52,11 +52,12 @@ public class BoardDao {
 	// 수정.
 	public boolean update(BoardVO board) {
 		conn = Dao.getConnect();
-		sql = "update tbl_board set brd_content=nvl(?, brd_content) where brd_no = ?";
+		sql = "update tbl_board set brd_title=nvl(?,brd_title), brd_content=nvl(?, brd_content) where brd_no = ?";
 		try {
 			psmt = conn.prepareStatement(sql);
-			psmt.setString(1, board.getBrdContent());
-			psmt.setInt(2, board.getBrdNo());
+			psmt.setString(1, board.getBrdTitle());
+			psmt.setString(2, board.getBrdContent());
+			psmt.setInt(3, board.getBrdNo());
 			int r = psmt.executeUpdate();
 			if (r > 0) {
 				return true;

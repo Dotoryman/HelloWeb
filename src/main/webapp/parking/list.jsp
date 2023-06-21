@@ -21,5 +21,6 @@
 		}
 	%>
 	</ul>
+	<a href = "../second">second servlet</a> 
 </body>
 </html>

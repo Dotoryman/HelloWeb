@@ -32,7 +32,7 @@ public class AddBoardServlet extends HttpServlet{
 		boolean result = dao.insert(board); // 입력처리
 		
 		if(result) {
-			resp.sendRedirect("second"); // 요청 재지정
+			resp.sendRedirect("board/blist.jsp"); // 요청 재지정
 		}else {
 			resp.sendRedirect("board/add.jsp");
 		}

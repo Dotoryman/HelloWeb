@@ -11,7 +11,7 @@
 		Title : <input type="text" name="title"><br>
 		Writer : <input type="text" name="writer"><br>
 		Content : <textarea rows="3" cols="10" name = "content"></textarea><br>
-		<button type="submit">저장하기</button>
+		<button type="submit">저장하기입니다!</button>
 	</form>
 </body>
 </html>

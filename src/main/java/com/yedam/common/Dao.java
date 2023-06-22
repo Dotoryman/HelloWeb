@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class Dao {
 	
-	static String url = "jdbc:oracle:thin:@3.34.183.138:1521/xe";
+	static String url = "jdbc:oracle:thin:@43.201.167.53/xe";
 	static String user = "proj";
 	static String pass = "proj";
 	static Connection conn;
